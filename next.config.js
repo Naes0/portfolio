@@ -3,7 +3,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  distDir: 'build',
   basePath: '/portfolio',
   assetPrefix: '/portfolio',
   output: 'export',
