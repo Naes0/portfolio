@@ -19,12 +19,12 @@ export const Bio: FC<BioProps> = ({}) => {
     {
       year: 2018,
       description:
-        'Interned at Rio Tinto as a software engineer to provide buisness and safety solutions.',
+        'Interned at Rio Tinto as a software engineer to provide business and safety solutions.',
     },
     {
       year: 2019,
       description:
-        'Started working at Curtin Univeristy, Bently building web apps serving staff and students.',
+        'Started working at Curtin Univeristy, Bentley building web apps serving staff and students.',
     },
     {
       year: 2020,

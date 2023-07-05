@@ -11,7 +11,7 @@ export const Hero: FC<HeroProps> = ({}) => {
       <S.InfoContainer>
         <Heading>Sean O&apos;Neill</Heading>
         <SubHeading>
-          Fullstack Developer {'( Frontend | AWS | Backend )'}
+          Full-stack Developer {'( Frontend | AWS | Backend )'}
         </SubHeading>
       </S.InfoContainer>
       <S.AvatarContainer>

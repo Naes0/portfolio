@@ -12,11 +12,11 @@ interface MeProps {}
 
 export const Me: FC<MeProps> = ({}) => {
   const body = `
-    Hi, I'm Sean a full-stack developer based in Perth, Western Australia 
-    with a passion building beautiful frontends and real-world solutions.
-    I have keen eye for design and building simple solutions. When I'm not
-    coding I love watching anime, listening to kpop and gaming with friends.
-    I'm currently employed at Curtin University as a fullstack developer.
+    Hi I'm Sean, a full-stack developer based in Perth, Western Australia. 
+    I have a passion for building beautiful frontends and real-world solutions.
+    I have a keen eye for design and finding simple solutions to complext problems. 
+    When I'm not coding I love watching anime, listening to kpop and gaming with friends.
+    I'm currently employed at Curtin University as a full-stack developer.
   `;
 
   return (
