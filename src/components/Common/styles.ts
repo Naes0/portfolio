@@ -43,9 +43,7 @@ export const Paragraph = styled.p`
 
 export const Button = styled(motion.button)``;
 
-// export const Link = styled(motion.)
-
-export const LinkButton = styled(motion.a)`
+export const LinkButton = styled(motion(Link))`
   display: inline-flex;
   align-items: center;
   width: max-content;
@@ -68,7 +66,6 @@ export const InlineLink = styled(motion.a)`
   &:hover {
     color: ${Colours.secondary.bg};
   }
-  /* border: 1px white solid; */
 `;
 
 export const Alert = styled.div`
