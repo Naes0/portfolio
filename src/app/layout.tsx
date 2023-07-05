@@ -8,7 +8,7 @@ import {
   HeaderContainer,
 } from './styles';
 import { Header } from '@/components';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const mplus = M_PLUS_Rounded_1c({
   subsets: ['latin'],

@@ -27,6 +27,7 @@ export const Header: FC<HeaderProps> = ({}) => {
       target: '_blank',
     },
   ];
+
   return (
     <S.HeaderContainer>
       <S.TitleLink href='/' prefetch={false}>{`< Sean O'Neill />`}</S.TitleLink>

@@ -82,6 +82,7 @@ export const ContentContainer = styled.section`
   justify-content: center;
   height: min-content;
   padding: 40px;
+  min-width: 100%;
 `;
 
 export const HomeContainer = styled(motion.section)`
