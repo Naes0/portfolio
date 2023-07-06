@@ -75,7 +75,7 @@ export const HeaderContainer = styled.section`
   min-width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 `;
 
 export const ContentContainer = styled.section`
@@ -97,10 +97,11 @@ export const HomeContainer = styled(motion.section)`
 `;
 
 export const StyledCanvas = styled(Canvas)`
-  min-height: 30vmax;
-  max-width: 30vmax;
-  margin-top: -5vh;
-  margin-bottom: -5vh;
+  min-height: 30vh;
+  max-width: 50vmin;
+  min-width: 90vw;
+  margin-top: -12vh;
+  margin-bottom: -12vh;
   z-index: 0;
 
   @media ${Device.mobile} {
@@ -109,7 +110,7 @@ export const StyledCanvas = styled(Canvas)`
   }
 
   canvas {
-    height: 30vmax !important;
-    width: 30vmax !important;
+    height: 50vh !important;
+    width: 90vw !important;
   }
 `;
