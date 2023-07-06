@@ -12,3 +12,4 @@ export {
 
 export { Colours } from './Colours';
 export { IconChevronRight } from './Icons';
+export { VoxelWorld } from './VoxelWorld';

@@ -6,9 +6,13 @@ import {
   GlobalStyles,
   GridLayout,
   HeaderContainer,
+  StyledCanvas,
 } from './styles';
 import { Header } from '@/components';
 import { AnimatePresence } from 'framer-motion';
+import { VoxelWorld } from '@/components/Common';
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { MotionCanvas } from 'framer-motion-3d';
 
 const mplus = M_PLUS_Rounded_1c({
   subsets: ['latin'],
@@ -36,7 +40,16 @@ export default function RootLayout({
               <Header />
             </HeaderContainer>
             <ContentContainer>
-              <AnimatePresence mode='wait'>{children}</AnimatePresence>
+              <StyledCanvas resize={{ offsetSize: true }}>
+                <ambientLight intensity={0.5} />
+                <pointLight position={[10, 10, 50]} />
+                <VoxelWorld />
+                <PerspectiveCamera position={[0, 0, 20]} />
+                <OrbitControls />
+              </StyledCanvas>
+              <AnimatePresence mode='wait'>
+                <div style={{ zIndex: 1 }}>{children}</div>
+              </AnimatePresence>
             </ContentContainer>
           </GridLayout>
         </StyledComponentsRegistry>

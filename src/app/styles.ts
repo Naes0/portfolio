@@ -1,5 +1,7 @@
 'use client';
 import { Colours } from '@/components/Common';
+import { Device } from '@/lib';
+import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
 import { rem } from 'polished';
 import { createGlobalStyle } from 'styled-components';
@@ -79,8 +81,9 @@ export const HeaderContainer = styled.section`
 export const ContentContainer = styled.section`
   grid-area: content;
   display: flex;
-  justify-content: center;
-  height: min-content;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
   padding: 40px;
   min-width: 100%;
 `;
@@ -90,5 +93,23 @@ export const HomeContainer = styled(motion.section)`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: ${rem(50)};
+  gap: 3vh;
+`;
+
+export const StyledCanvas = styled(Canvas)`
+  min-height: 30vmax;
+  max-width: 30vmax;
+  margin-top: -5vh;
+  margin-bottom: -5vh;
+  z-index: 0;
+
+  @media ${Device.mobile} {
+    margin-top: -12vh;
+    margin-bottom: -12vh;
+  }
+
+  canvas {
+    height: 30vmax !important;
+    width: 30vmax !important;
+  }
 `;
