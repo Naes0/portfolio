@@ -10,9 +10,13 @@ import {
 } from './styles';
 import { Header } from '@/components';
 import { AnimatePresence } from 'framer-motion';
-import { VoxelWorld } from '@/components/Common';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
-import { MotionCanvas } from 'framer-motion-3d';
+import { JapaneseCherry } from '@/components/Common';
+import {
+  OrbitControls,
+  OrthographicCamera,
+  PerspectiveCamera,
+} from '@react-three/drei';
+import { Footer } from '@/components/Footer';
 
 const mplus = M_PLUS_Rounded_1c({
   subsets: ['latin'],
@@ -41,16 +45,17 @@ export default function RootLayout({
             </HeaderContainer>
             <ContentContainer>
               <StyledCanvas resize={{ offsetSize: true }}>
-                <ambientLight intensity={0.5} />
+                <ambientLight intensity={0.6} />
                 <pointLight position={[10, 10, 50]} />
-                <VoxelWorld />
-                <PerspectiveCamera position={[0, 0, 20]} />
+                <JapaneseCherry />
+                <PerspectiveCamera makeDefault position={[100, 20, 20]} />
                 <OrbitControls />
               </StyledCanvas>
               <AnimatePresence mode='wait'>
                 <div style={{ zIndex: 1 }}>{children}</div>
               </AnimatePresence>
             </ContentContainer>
+            <Footer />
           </GridLayout>
         </StyledComponentsRegistry>
       </body>
