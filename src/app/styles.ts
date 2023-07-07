@@ -3,7 +3,6 @@ import { Colours } from '@/components/Common';
 import { Device } from '@/lib';
 import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
-import { rem } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 

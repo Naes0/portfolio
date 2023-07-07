@@ -4,7 +4,6 @@ import { Mesh, MeshStandardMaterial } from 'three';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
 import { motion } from 'framer-motion-3d';
-import { useCallback, useMemo } from 'react';
 
 type GLTFResult = GLTF & {
   nodes: {

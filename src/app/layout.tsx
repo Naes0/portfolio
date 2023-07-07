@@ -8,20 +8,14 @@ import {
   HeaderContainer,
   StyledCanvas,
 } from './styles';
-import { Header } from '@/components';
+import { Header, Footer } from '@/components';
 import { AnimatePresence } from 'framer-motion';
 import { JapaneseCherry } from '@/components/Common';
-import {
-  OrbitControls,
-  OrthographicCamera,
-  PerspectiveCamera,
-} from '@react-three/drei';
-import { Footer } from '@/components/Footer';
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 
 const mplus = M_PLUS_Rounded_1c({
   subsets: ['latin'],
   weight: '400',
-  display: 'swap',
 });
 
 const metadata = {

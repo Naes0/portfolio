@@ -18,6 +18,7 @@ export const HeaderContainer = styled(motion.header)`
 
 export const TitleLink = styled(Link)`
   font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: bold;
   text-decoration: none;
 `;
 
