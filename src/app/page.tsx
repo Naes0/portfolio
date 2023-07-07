@@ -7,6 +7,11 @@ import { Likes } from './Likes';
 import { Socials } from './Socials';
 import * as S from './styles';
 
+export const metadata = {
+  title: "Sean O'Neill Portfolio",
+  description: "Portfolio for Sean O'Neill",
+};
+
 const HomePage = () => {
   const alertText = `Hi, I'm a full-stack developer in Perth, WA`;
   return (

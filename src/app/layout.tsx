@@ -18,11 +18,6 @@ const mplus = M_PLUS_Rounded_1c({
   weight: '400',
 });
 
-const metadata = {
-  title: "Sean O'Neill Portfolio",
-  description: "Portfolio for Sean O'Neill",
-};
-
 export default function RootLayout({
   children,
 }: {
