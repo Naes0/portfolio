@@ -2,18 +2,22 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { Device } from '@/lib';
 
 export const HeaderContainer = styled(motion.header)`
   grid-area: header;
-  height: 5vh;
-  max-height: 100px;
+  height: clamp(60px, 5vh, 100px);
   width: 100%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 20px;
+
+  @media ${Device.mobile} {
+    justify-content: space-evenly;
+  }
 `;
 
 export const TitleLink = styled(Link)`
@@ -22,11 +26,18 @@ export const TitleLink = styled(Link)`
   text-decoration: none;
 `;
 
-export const Navigation = styled.nav``;
+export const Navigation = styled.nav`
+  display: flex;
+  align-items: center;
+`;
 
 export const UnorderedList = styled.ul`
-  display: flex;
+  display: none;
   gap: 20px;
+
+  @media ${Device.mobile} {
+    display: flex;
+  }
 `;
 
 export const ListItem = styled.li``;

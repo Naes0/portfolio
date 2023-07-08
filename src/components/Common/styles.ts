@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { Variants, motion } from 'framer-motion';
 import { Colours } from './Colours';
+import { Device } from '@/lib';
 
 export const NextLink = styled(Link)`
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -74,6 +75,25 @@ export const Alert = styled(motion.div)`
   text-align: center;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
+`;
+
+export const IconButton = styled(motion.button)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 0.375rem;
+  padding: 13px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  path {
+    fill: white;
+  }
+
+  @media ${Device.mobile} {
+    display: none;
+  }
 `;
 
 export const FadeInOnView = {

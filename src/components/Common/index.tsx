@@ -8,6 +8,7 @@ export {
   LinkButton,
   Alert,
   InlineLink,
+  IconButton,
 } from './styles';
 
 export { Colours } from './Colours';

@@ -1,6 +1,7 @@
 import type { FC } from 'react';
-import { InlineLink, NextLink } from '../Common';
+import { IconButton, InlineLink, NextLink } from '../Common';
 import * as S from './styles';
+import { IconHamburger } from '../Common/Icons';
 
 interface HeaderProps {}
 
@@ -41,6 +42,11 @@ export const Header: FC<HeaderProps> = ({}) => {
             </S.ListItem>
           ))}
         </S.UnorderedList>
+        <IconButton
+          whileHover={{ backgroundColor: 'rgba(255,255,255,0.2)' }}
+          whileTap={{ backgroundColor: 'rgba(255,255,255,0.4)' }}>
+          <IconHamburger />
+        </IconButton>
       </S.Navigation>
     </S.HeaderContainer>
   );
