@@ -68,7 +68,7 @@ export const InlineLink = styled(motion.a)`
   }
 `;
 
-export const Alert = styled.div`
+export const Alert = styled(motion.div)`
   padding: 0.75rem;
   font-family: 'Segoe UI', Arial, sans-serif;
   text-align: center;

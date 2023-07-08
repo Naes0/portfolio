@@ -7,6 +7,7 @@ import {
 } from '@/components/Common';
 import type { FC } from 'react';
 import * as S from './styles';
+import { Item } from '@/components/Common/styles';
 
 interface MeProps {}
 
@@ -20,7 +21,7 @@ export const Me: FC<MeProps> = ({}) => {
   `;
 
   return (
-    <S.MeContainer>
+    <S.MeContainer variants={Item}>
       <SectionHeading>Me</SectionHeading>
       <Paragraph>{body}</Paragraph>
       <div

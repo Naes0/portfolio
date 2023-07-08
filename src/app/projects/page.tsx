@@ -1,7 +1,10 @@
+'use client';
+
 import type { FC } from 'react';
-import * as S from './styles';
 import { SectionHeading } from '@/components/Common';
 import { Project } from '@/components';
+import { StaggeredOnView } from '@/components/Common/styles';
+import * as S from './styles';
 
 interface ProjectsPageProps {}
 
@@ -13,10 +16,6 @@ type Project = {
   platfrom?: string[];
   stack?: string;
   year: number;
-};
-export const metadata = {
-  title: 'Projects',
-  description: "Sean O'Neill's Projects",
 };
 
 const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
@@ -67,7 +66,7 @@ const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}>
       <SectionHeading>Projects</SectionHeading>
-      <S.ProjectsGrid>
+      <S.ProjectsGrid {...StaggeredOnView(0.2)}>
         {projects.map((project) => (
           <Project
             key={project.name}
@@ -78,7 +77,7 @@ const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
         ))}
       </S.ProjectsGrid>
       <SectionHeading>Old Projects</SectionHeading>
-      <S.ProjectsGrid>
+      <S.ProjectsGrid {...StaggeredOnView(0.2)}>
         {oldProjects.map((project) => (
           <Project
             key={project.name}

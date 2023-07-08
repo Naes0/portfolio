@@ -1,8 +1,9 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const BioContainer = styled.section`
+export const BioContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -2,6 +2,7 @@ import type { FC } from 'react';
 import * as S from './styles';
 import { Colours, InlineLink, SectionHeading } from '@/components/Common';
 import React from 'react';
+import { Item } from '@/components/Common/styles';
 
 interface BioProps {}
 
@@ -50,7 +51,7 @@ export const Bio: FC<BioProps> = ({}) => {
     },
   ];
   return (
-    <S.BioContainer>
+    <S.BioContainer variants={Item}>
       <SectionHeading>Bio</SectionHeading>
       {events.map((event) => (
         <S.Event key={event.year}>

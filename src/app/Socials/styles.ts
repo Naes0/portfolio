@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { rem } from 'polished';
 
-export const SocialsContainer = styled.section`
+export const SocialsContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   gap: ${rem(20)};

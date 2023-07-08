@@ -19,6 +19,10 @@ export const ProjectImage = styled(Image)`
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 10px;
+
+  &:hover {
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 export const Name = styled.h2`

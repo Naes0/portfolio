@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import * as S from './styles';
 import Link from 'next/link';
+import { Item } from '../Common/styles';
 
 interface ProjectProps {
   name: string;
@@ -11,7 +12,7 @@ interface ProjectProps {
 export const Project: FC<ProjectProps> = ({ name, description, thumbnail }) => {
   const hrefName = name.toLowerCase().replace(' ', '-');
   return (
-    <S.ProjectContainer>
+    <S.ProjectContainer variants={Item} whileHover={{ y: -20 }}>
       <S.ProjectLink prefetch={false} href={`/projects/${hrefName}`}>
         <S.ProjectImage
           src={thumbnail}

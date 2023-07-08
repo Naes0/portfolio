@@ -3,6 +3,7 @@ import { SectionHeading } from '@/components/Common';
 import * as S from './styles';
 import React from 'react';
 import { IconGithub, IconInstagram } from '@/components/Common/Icons';
+import { Item } from '@/components/Common/styles';
 
 interface SocialsProps {}
 
@@ -26,7 +27,7 @@ export const Socials: FC<SocialsProps> = ({}) => {
     },
   ];
   return (
-    <S.SocialsContainer>
+    <S.SocialsContainer variants={Item}>
       <SectionHeading>Socials</SectionHeading>
       <S.UnorderedList>
         {socials.map((social) => (

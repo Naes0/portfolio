@@ -85,6 +85,7 @@ export const ContentContainer = styled.section`
   height: 100%;
   padding: 40px;
   min-width: 100%;
+  min-height: inherit;
 `;
 
 export const HomeContainer = styled(motion.section)`
@@ -93,6 +94,7 @@ export const HomeContainer = styled(motion.section)`
   justify-content: center;
   flex-direction: column;
   gap: 3vh;
+  backdrop-filter: blur(10px);
 `;
 
 export const StyledCanvas = styled(Canvas)`

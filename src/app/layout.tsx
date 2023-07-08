@@ -37,7 +37,7 @@ export default function RootLayout({
                 <ambientLight intensity={0.6} />
                 <pointLight position={[10, 10, 50]} />
                 <JapaneseCherry />
-                <PerspectiveCamera makeDefault position={[100, 20, 20]} />
+                <PerspectiveCamera makeDefault position={[130, 20, 20]} />
                 <OrbitControls />
               </StyledCanvas>
               <AnimatePresence mode='wait'>

@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { Device } from '@/lib';
 import { rem } from 'polished';
+import { motion } from 'framer-motion';
 
-export const HeroContainer = styled.section`
+export const HeroContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
