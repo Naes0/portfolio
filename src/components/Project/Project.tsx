@@ -12,7 +12,7 @@ export const Project: FC<ProjectProps> = ({ name, description, thumbnail }) => {
   const hrefName = name.toLowerCase().replace(' ', '-');
   return (
     <S.ProjectContainer>
-      <S.ProjectLink href={`/projects/${hrefName}`}>
+      <S.ProjectLink prefetch={false} href={`/projects/${hrefName}`}>
         <S.ProjectImage
           src={thumbnail}
           alt={`${name}-preview`}
