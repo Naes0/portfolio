@@ -14,6 +14,10 @@ type Project = {
   stack?: string;
   year: number;
 };
+export const metadata = {
+  title: 'Projects',
+  description: "Sean O'Neill's Projects",
+};
 
 const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
   const projects: Project[] = [
@@ -21,28 +25,28 @@ const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
       name: 'Study Planner',
       description:
         'Application to aid Curtin University students in planning their course units and semesters during their academic tenure.',
-      thumbnail: '/portfolio/images/study-planner-thumbnail.png',
+      thumbnail: '/portfolio/images/thumbnails/study-planner-thumbnail.png',
       year: 2023,
     },
     {
       name: 'Timetable Planner',
       description:
         'Timetable app for university students who wish to plan their timetable across multiple locations, years, and study periods.',
-      thumbnail: '/portfolio/images/timetable-planner-preview.png',
+      thumbnail: '/portfolio/images/thumbnails/timetable-planner-preview.png',
       year: 2022,
     },
     {
       name: 'Component Library',
       description:
         "Developed a reusable React component library based on Curtin's Mimas design system",
-      thumbnail: '/portfolio/images/component-libarary-preview.png',
+      thumbnail: '/portfolio/images/thumbnails/component-libarary-preview.png',
       year: 2021,
     },
     {
       name: 'Autopark',
       description:
         'Designed and implemented a parking session automation app to avoid fines at Curtin University.',
-      thumbnail: '/portfolio/images/autopark-preview.png',
+      thumbnail: '/portfolio/images/thumbnails/autopark-preview.png',
       year: 2021,
     },
   ];
@@ -52,7 +56,7 @@ const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
       name: 'My Work',
       description:
         'Reinvisioning the Curtin Univeristy Staff Portal to a modern and personalised design.',
-      thumbnail: '/portfolio/images/mywork-preview.png',
+      thumbnail: '/portfolio/images/thumbnails/mywork-preview.png',
       year: 2021,
     },
   ];

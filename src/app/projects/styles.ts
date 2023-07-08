@@ -5,7 +5,7 @@ import { rem } from 'polished';
 import { Device } from '@/lib';
 
 export const ProjectSection = styled(motion.section)`
-  max-width: 500px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -14,10 +14,6 @@ export const ProjectSection = styled(motion.section)`
 
 export const ProjectsGrid = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-
-  @media ${Device.mobile} {
-    grid-template-columns: repeat(2, minmax(0px, 1fr));
-  }
 `;

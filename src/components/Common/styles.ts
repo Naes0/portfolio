@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { Variants, motion } from 'framer-motion';
 import { Colours } from './Colours';
 
 export const NextLink = styled(Link)`
@@ -75,3 +75,33 @@ export const Alert = styled.div`
   background: rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
 `;
+
+export const FadeInOnView = {
+  initial: 'hidden',
+  whileInView: 'show',
+  viewport: {
+    once: true,
+  },
+  transition: {
+    delay: 0.3,
+  },
+};
+
+export const StaggeredOnView = (time = 0.3) => ({
+  initial: 'hidden',
+  animate: 'show',
+  whileInView: 'show',
+  exit: 'exit',
+  viewport: {
+    once: true,
+  },
+  transition: {
+    staggerChildren: time,
+  },
+});
+
+export const Item: Variants = {
+  hidden: { opacity: 0 },
+  exit: { opacity: 0 },
+  show: { opacity: 1 },
+};
