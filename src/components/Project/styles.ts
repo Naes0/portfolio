@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { Variants, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,17 +12,13 @@ export const ProjectContainer = styled(motion.article)`
   flex-direction: column;
 `;
 
-export const ProjectImage = styled(Image)`
+export const ProjectImage = styled(motion(Image))`
   width: 100%;
   height: auto;
   aspect-ratio: 3.2 / 2;
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 10px;
-
-  &:hover {
-    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.3);
-  }
 `;
 
 export const Name = styled.h2`
@@ -38,3 +34,9 @@ export const Description = styled.p`
 export const ProjectLink = styled(Link)`
   text-decoration: none;
 `;
+
+export const ProjectVariants: Variants = {
+  hover: {
+    boxShadow: '0 0 60px 10px rgba(0, 0, 0, 0.3)',
+  },
+};
