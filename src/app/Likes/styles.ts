@@ -9,7 +9,7 @@ export const LikesSection = styled(motion.section)`
   gap: 20px;
 `;
 
-export const UnorderList = styled(motion.ul)`
+export const UnorderedList = styled(motion.ul)`
   display: grid;
   min-width: 100%;
   grid-template-columns: repeat(3, 1fr);

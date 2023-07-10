@@ -13,7 +13,7 @@ type Project = {
   description: string;
   thumbnail: string;
   link?: string;
-  platfrom?: string[];
+  platform?: string[];
   stack?: string;
   year: number;
 };
@@ -37,7 +37,7 @@ const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
     {
       name: 'Component Library',
       description:
-        "Developed a reusable React component library based on Curtin's Mimas design system",
+        "Developed a reusable React component library based on Curtin's design system",
       thumbnail: '/portfolio/images/thumbnails/component-libarary-preview.png',
       year: 2021,
     },
@@ -54,7 +54,7 @@ const ProjectsPage: FC<ProjectsPageProps> = ({}) => {
     {
       name: 'My Work',
       description:
-        'Reinvisioning the Curtin Univeristy Staff Portal to a modern and personalised design.',
+        'Re-envisioning the Curtin University Staff Portal to a modern and personalised design.',
       thumbnail: '/portfolio/images/thumbnails/mywork-preview.png',
       year: 2021,
     },

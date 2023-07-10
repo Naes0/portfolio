@@ -12,18 +12,18 @@ export const Likes: FC<LikesProps> = ({}) => {
     'Gaming',
     'Marvel',
     'Spider-Man',
-    'Kdrama',
+    'KDrama',
     'Coding',
     'Problem-Solving',
   ];
   return (
     <S.LikesSection variants={Item}>
       <SectionHeading>I ♥</SectionHeading>
-      <S.UnorderList>
+      <S.UnorderedList>
         {likes.map((like) => (
           <S.ListItem key={like}>{like}</S.ListItem>
         ))}
-      </S.UnorderList>
+      </S.UnorderedList>
     </S.LikesSection>
   );
 };
