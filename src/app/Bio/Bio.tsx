@@ -25,12 +25,12 @@ export const Bio: FC<BioProps> = ({}) => {
     {
       year: 2019,
       description:
-        'Started working at Curtin Univeristy, Bentley building web apps serving staff and students.',
+        'Started working at Curtin University, Bentley building web apps serving staff and students.',
     },
     {
       year: 2020,
       description:
-        'Completed Bachelor of Science (Computing) Computer Science Major at Curtin Univeristy.',
+        'Completed Bachelor of Science (Computing) Computer Science Major at Curtin University.',
     },
     {
       year: 2022,
