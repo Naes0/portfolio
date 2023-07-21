@@ -31,7 +31,7 @@ export const Header: FC<HeaderProps> = ({}) => {
 
   return (
     <S.HeaderContainer>
-      <S.TitleLink href='/' prefetch={false}>{`< Sean O'Neill />`}</S.TitleLink>
+      <S.TitleLink href='/'>{`< Sean O'Neill />`}</S.TitleLink>
       <S.Navigation>
         <S.UnorderedList>
           {links.map((link) => (

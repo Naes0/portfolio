@@ -14,7 +14,7 @@ export const Project: FC<ProjectProps> = ({ name, description, thumbnail }) => {
   const projectVariants = { ...Item, hover: { y: -20 } };
   return (
     <S.ProjectContainer variants={projectVariants} whileHover={'hover'}>
-      <S.ProjectLink prefetch={false} href={`/projects/${hrefName}`}>
+      <S.ProjectLink href={`/projects/${hrefName}`}>
         <S.ProjectImage
           src={thumbnail}
           alt={`${name}-preview`}
